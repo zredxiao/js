@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>等一哈</title>
+    <style>
+        p{
+            text-align: center;
+            font-size: 20px;
+        }
+        span{
+            color: red;
+
+        }
+    </style>
+</head>
+<body>
+<p>
+    <span id="time">5</span>S之后跳转到新世界.......
+</p>
+<script>
+    var second=5;
+    function timeShow() {
+        second--;
+        if(second<=0){
+            location.href="http://www.hanbeibei.work"
+        }
+
+        var time= document.getElementById("time");
+        time.innerText=second;
+
+    }
+    setInterval(timeShow,1000);
+
+
+
+
+</script>
+</body>
+</html>
